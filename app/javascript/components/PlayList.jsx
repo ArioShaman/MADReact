@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-class PlayList extends React.Component {
+export default class PlayList extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,6 +16,7 @@ class PlayList extends React.Component {
       this.setState({ playlists});
     }); 
   }
+
   render () {
     var playlists = this.state.playlists.map((playlist)=>{
       return (
@@ -30,5 +31,3 @@ class PlayList extends React.Component {
     );
   }
 }
-
-export default PlayList
